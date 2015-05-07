@@ -26,6 +26,7 @@ Connect to your database via Mongoose.  This is where you will specify the name 
 Create a simple endpoint at '/' that responds with "hello" to test your setup.
 
 **Breakpoint:** At this point, you should be able to start your app (`node server.js`) and see that your app is listening, and has no errors.  Your app should also be connected to your database, but we will test that functionality later on.
+// DONE
 
 ## Step 2: Create Sighting Model
 
