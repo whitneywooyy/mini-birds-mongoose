@@ -10,13 +10,28 @@ module.exports = {
 		// res.send('create test');
 	},
 	read: function(req, res){
-		
-		res.send('read test');
+		Sighting
+		.find(req.query)
+		.exec(function(err, result){
+			if (err) return res.status(500).send(err);
+			else res.send(result);
+		});	
+		// res.send('read test');
 	},
 	update: function(req, res){
-		res.send('update test');
+		Sighting
+		.findByIdAndUpdate(req.params.id, req.body, function(err, result){
+				if (err) return res.status(500).send(err);
+				else res.send(result);
+		});
+		// res.send('update test');
 	},
 	delete: function(req, res){
-		res.send('delete test');
+		Sighting
+		.findByIdAndRemove(req.params.id, function(err, result){
+				if (err) return res.status(500).send(err);
+				else res.send(result);
+		});
+		// res.send('delete test');
 	}
 }

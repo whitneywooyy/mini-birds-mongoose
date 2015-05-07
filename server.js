@@ -25,8 +25,8 @@ app.use(cors());
 // });
 app.post('/sighting', SightingCtrl.create);	// Referencing SightingCtrl.create in SightingCtrl.js
 app.get('/sighting', SightingCtrl.read);
-app.put('/sighting', SightingCtrl.update);
-app.delete('/sighting', SightingCtrl.delete);
+app.put('/sighting/:id', SightingCtrl.update);
+app.delete('/sighting/:id', SightingCtrl.delete);
 
 // CONNECTIONS
 var port = 8980;

@@ -40,6 +40,7 @@ In a separate file called 'Sighting.js' create a model for our Sighting data. No
  * Require and Index properties where appropriate
 
 **Consider** adding a hook to create and update an _updatedAt_ field
+// DONE
 
 
 ## Step 3: Create API
